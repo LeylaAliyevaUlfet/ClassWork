@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,600;0,800;1,500;1,600;1,800&family=Kanit:wght@300&family=Raleway:wght@200&family=Source+Sans+Pro:ital@1&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-image: url("../img/bg.jpg");
+  height: 100vh;
+  position: relative;
+}
+header nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+}
+header nav li {
+  list-style: none;
+}
+header nav li a {
+  text-decoration: none;
+  color: white;
+}
+header nav li a:hover::after {
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 2px;
+  background-color: red;
+  display: block;
+}
+header .bottom {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+  align-content: center;
+  width: 50%;
+}
+header .bottom .right {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+header .bottom .right h2 {
+  position: relative;
+  color: #8a7162;
+}
+header .bottom .right h2::after {
+  content: "";
+  width: 169px;
+  height: 3px;
+  background-color: #8a7162;
+  display: block;
+  position: absolute;
+  bottom: 10px;
+}
+header .bottom .right h1 {
+  color: white;
+  font-size: 70px;
+}
+header .bottom .right .h1 {
+  display: flex;
+  width: 50%;
+}
+header .bottom .right span {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #8a7162;
+  width: 90px;
+  height: 40px;
+}
+header .bottom .right span:hover {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+header .bottom .right span a {
+  text-decoration: none;
+  color: white;
+}
+header .bottom .left img {
+  width: 450px;
+  height: 450px;
+  position: absolute;
+  right: 40px;
+  top: 270px;
+  transition-property: all;
+  transition-duration: 2s;
+}
+header .bottom .left img:hover {
+  transform: translate(10px, 190px);
+}/*# sourceMappingURL=main.css.map */
