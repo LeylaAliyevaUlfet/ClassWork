@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header nav {
+  background-color: black;
+  width: 100%;
+  position: fixed;
+}
+header nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 25px;
+}
+header nav ul li {
+  list-style: none;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+header nav ul li a:hover {
+  color: black;
+}
+header nav ul li:hover {
+  background-color: beige;
+  transform: scale(1.4);
+  border-radius: 5px;
+}
+
+section .container {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+section .container .box {
+  width: 200px;
+  height: 200px;
+  border: 3px dotted black;
+  background-color: yellow;
+  transition-property: all;
+  transition-duration: 2s;
+}
+section .container .box h1 {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  align-items: center;
+}
+section .container .box img {
+  display: none;
+  width: 200px;
+  height: 200px;
+}
+section .container .box:hover {
+  transform: rotateX(360deg);
+}
+section .container .box:hover h1 {
+  display: none;
+}
+section .container .box:hover img {
+  display: block;
+}
+
+footer .all {
+  display: flex;
+  justify-content: space-around;
+  background-color: aqua;
+}
+footer .all .column {
+  color: black;
+}
+footer .all .column li {
+  list-style: none;
+}
+footer .all .column li a {
+  text-decoration: none;
+  color: grey;
+}/*# sourceMappingURL=main.css.map */
