@@ -1,0 +1,53 @@
+header{
+    background-color: rgb(233, 233, 205);
+    .container{
+        box-sizing: border-box;
+        padding: 25px;
+        .header{
+            nav{
+                display: flex;
+                justify-content: space-around;
+                .logo{
+                    @media only screen and (max-width:574px){
+                        color: white;
+                    }
+                }
+                ul{
+                    display: flex;
+                    column-gap: 30px;
+                    
+                    
+                    li{display: block;
+                        &:nth-child(5){
+                            display: none;
+                            @media only screen and (max-width:574px){
+                                color: white;
+                            }
+                        }
+                        @media only screen and (max-width:576px){
+                            display: none;
+                            &:nth-child(5){
+                                display: block;
+                            }
+                        }
+                          a{
+                                font-size: 20px;
+                                color: black; 
+                                border: 1px solid transparent;
+                                padding: 10px;
+                                border-radius: 10px;
+                                &:hover{
+                                    border: 1px solid black;
+                                   color: red;
+                                }
+                               
+                          }
+                    }
+                }
+            }
+        }
+    }
+    @media only screen and (max-width:576px){
+        background-color: black;
+    }
+}

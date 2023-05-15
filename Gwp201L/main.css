@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none !important;
+}
+
+header {
+  background-color: rgb(233, 233, 205);
+}
+header .container {
+  box-sizing: border-box;
+  padding: 25px;
+}
+header .container .header nav {
+  display: flex;
+  justify-content: space-around;
+}
+@media only screen and (max-width: 574px) {
+  header .container .header nav .logo {
+    color: white;
+  }
+}
+header .container .header nav ul {
+  display: flex;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+}
+header .container .header nav ul li {
+  display: block;
+}
+header .container .header nav ul li:nth-child(5) {
+  display: none;
+}
+@media only screen and (max-width: 574px) {
+  header .container .header nav ul li:nth-child(5) {
+    color: white;
+  }
+}
+@media only screen and (max-width: 576px) {
+  header .container .header nav ul li {
+    display: none;
+  }
+  header .container .header nav ul li:nth-child(5) {
+    display: block;
+  }
+}
+header .container .header nav ul li a {
+  font-size: 20px;
+  color: black;
+  border: 1px solid transparent;
+  padding: 10px;
+  border-radius: 10px;
+}
+header .container .header nav ul li a:hover {
+  border: 1px solid black;
+  color: red;
+}
+@media only screen and (max-width: 576px) {
+  header {
+    background-color: black;
+  }
+}
+
+.heroBanner {
+  background-image: url("./img/freeLife.jpg");
+  height: 100vh;
+  background-size: cover;
+}
+@media only screen and (max-width: 576px) {
+  .heroBanner {
+    background-image: url("./img/heroResponsiv.jpg");
+    height: 100vh;
+    background-size: cover;
+  }
+}
+
+.table .container {
+  display: block;
+}
+.table .container table tbody tr td:nth-child(2) img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+@media only screen and (max-width: 992px) {
+  .table .container {
+    display: none;
+  }
+}/*# sourceMappingURL=main.css.map */
